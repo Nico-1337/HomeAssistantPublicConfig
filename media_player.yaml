@@ -1,0 +1,7 @@
+#- platform: samsungtv
+#  host: !secret ip_tv_chambre_salon
+
+#- platform: androidtv
+#  name: TV chambre nico
+#  device_class: androidtv
+#  host: !secret ip_tv_chambre_nico

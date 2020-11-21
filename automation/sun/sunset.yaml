@@ -1,0 +1,9 @@
+#- id: sunset
+#  alias: Sunset
+#  trigger:
+#    - platform: sun
+#      event: sunset
+#  action:
+#    - service: browser_mod.set_theme
+#      data:
+#        theme: midnight

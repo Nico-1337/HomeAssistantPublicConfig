@@ -1,0 +1,14 @@
+- id: binding_wallmonitor_off
+  alias: Binding wallmonitor off
+  description: ''
+  trigger:
+    - device_id: 7a8439498c264a43ac3518b973ac8a2e
+      domain: light
+      entity_id: light.inr_1_bureau
+      platform: device
+      type: turned_off
+  condition: [ ]
+  action:
+    - data:
+        entity_id: switch.bf0c83888fddddb8f1k45g
+      service: switch.turn_off

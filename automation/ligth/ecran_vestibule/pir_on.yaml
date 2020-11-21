@@ -1,0 +1,14 @@
+- id: surface_screen_on
+  alias: surface screen on
+  description: ''
+  trigger:
+    - device_id: 23da6c73fe29408d91b253f2e90e0942
+      domain: binary_sensor
+      entity_id: binary_sensor.pir_sensor
+      platform: device
+      type: motion
+  condition: [ ]
+  action:
+    - data:
+        entity_id: light.browser_tabletteentree
+      service: light.turn_on

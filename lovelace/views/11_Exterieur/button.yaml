@@ -1,0 +1,61 @@
+cards:
+
+  - cards:
+
+      # Boutton 1
+      - entity: light.terrasse
+        hold_action:
+          action: more-info
+        name: Néon et projecteur
+        show_icon: true
+        icon: mdi:coach-lamp
+        show_name: true
+        tap_action:
+          action: toggle
+        type: entity-button
+
+      # Boutton 2
+      - entity: switch.bffccf716a3bc42613vksx
+        hold_action:
+          action: more-info
+        name: Guirlandes
+        show_icon: true
+        icon: mdi:medal
+        show_name: true
+        tap_action:
+          action: toggle
+        type: entity-button
+
+    type: horizontal-stack
+
+
+  - cards:
+
+      # Boutton 1
+      - entity: switch.lumiere_chaufferie_relay
+        hold_action:
+          action: more-info
+        name: Chaufferie
+        show_icon: true
+        icon: mdi:washing-machine
+        show_name: true
+        tap_action:
+          action: toggle
+        type: entity-button
+
+      # Boutton 2
+      - entity: switch.bffccf716a3bc42613vksx
+        hold_action:
+          action: more-info
+        name: Anti-moustique
+        show_icon: true
+        icon: mdi:heart-flash
+        show_name: true
+        tap_action:
+          action: toggle
+        type: entity-button
+
+    type: horizontal-stack
+
+
+type: vertical-stack

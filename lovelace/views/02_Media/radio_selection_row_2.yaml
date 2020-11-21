@@ -1,0 +1,50 @@
+- type: picture
+  image: /local/images/radio/rtl.jpg
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://streaming.radio.rtl.fr/rtl-1-48-192"
+      media_content_type: music
+
+
+- type: picture
+  image: /local/images/radio/fg.jpg
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://radiofg.impek.com/fg"
+      media_content_type: music
+
+
+- type: picture
+  image: /local/images/radio/nrj.png
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://cdn.nrjaudio.fm/audio1/fr/40010/aac_64.mp3"
+      media_content_type: music
+
+
+- type: picture
+  image: /local/images/radio/europe1.jpg
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://e1-live-mp3-128.scdn.arkena.com/europe1.mp3"
+      media_content_type: music

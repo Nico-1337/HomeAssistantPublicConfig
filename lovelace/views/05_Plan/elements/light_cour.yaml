@@ -1,0 +1,10 @@
+- type: image
+  entity: light.cours
+  tap_action: none
+  hold_action: none
+  state_image:
+    "on": /local/floorplan/misc/light_on.png
+    "off": /local/floorplan/misc/light_off.png
+  style:
+    top: 36%
+    left: 80%

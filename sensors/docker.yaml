@@ -1,0 +1,33 @@
+#sensor rbp_docker:
+- platform: mqtt
+  state_topic: "pi/infos/docker"
+  name: "Docker Date data collected"
+  value_template: '{{ value_json.datetimedatacollected }}'
+- platform: mqtt
+  state_topic: "pi/infos/docker"
+  name: "Docker Boot Time"
+  value_template: '{{ value_json.boottime }}'
+- platform: mqtt
+  state_topic: "pi/infos/docker"
+  name: "Docker Disk usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.diskusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/docker"
+  name: "Docker Virtual memory"
+  value_template: '{{ value_json.virtualmem }}'
+  unit_of_measurement: '%'
+- platform: mqtt
+  state_topic: "pi/infos/docker"
+  name: "Docker CPU usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.cpuusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/docker"
+  name: "Docker CPU temp"
+  unit_of_measurement: '°F'
+  value_template: '{{ value_json.cputemp }}'
+- platform: mqtt
+  state_topic: "pi/infos/docker"
+  name: "Docker Disk size"
+  value_template: '{{ value_json.disktotal }}'

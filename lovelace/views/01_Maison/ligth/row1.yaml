@@ -1,0 +1,29 @@
+- entity: light.terrasse
+  type: picture-entity
+  tap_action:
+    action: toggle
+  image: /local/images/pieces/exterieur.jpg
+  state_filter:
+    "on": grayscale(0%)
+    "off": grayscale(100%)
+
+
+- entity: light.salon
+  type: picture-entity
+  tap_action:
+    action: toggle
+  image: /local/images/pieces/salon.jpg
+  state_filter:
+    "on": grayscale(0%)
+    "off": grayscale(100%)
+
+
+- entity: switch.sonoff_10001914f3_2
+  type: picture-entity
+  tap_action:
+    action: toggle
+  image: /local/images/pieces/vestibule.jpg
+  name: Vestibule
+  state_filter:
+    "on": grayscale(0%)
+    "off": grayscale(100%)

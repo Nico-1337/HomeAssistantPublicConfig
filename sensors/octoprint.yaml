@@ -1,0 +1,54 @@
+#sensor rbp_octoprint:
+- platform: mqtt
+  state_topic: "pi/infos/octoprint"
+  name: "Octoprint Date data collected"
+  value_template: '{{ value_json.datetimedatacollected }}'
+- platform: mqtt
+  state_topic: "pi/infos/octoprint"
+  name: "Octoprint Boot Time"
+  value_template: '{{ value_json.boottime }}'
+- platform: mqtt
+  state_topic: "pi/infos/octoprint"
+  name: "Octoprint Disk usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.diskusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/octoprint"
+  name: "Octoprint Virtual memory"
+  value_template: '{{ value_json.virtualmem }}'
+  unit_of_measurement: '%'
+- platform: mqtt
+  state_topic: "pi/infos/octoprint"
+  name: "Octoprint CPU usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.cpuusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/octoprint"
+  name: "Octoprint CPU temp"
+  unit_of_measurement: '°F'
+  value_template: '{{ value_json.cputemp }}'
+- platform: mqtt
+  state_topic: "pi/infos/octoprint"
+  name: "Octoprint Disk size"
+  value_template: '{{ value_json.disktotal }}'
+
+#sensor 3dprinter:
+- platform: mqtt
+  state_topic: "octoprint/progress/printing"
+  name: "3D Progress"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.progress }}'
+- platform: mqtt
+  state_topic: "octoprint/progress/printing"
+  name: "3D Print name"
+  value_template: '{{ value_json.path }}'
+- platform: mqtt
+  state_topic: "octoprint/temperature/bed"
+  name: "3D Bed temperature"
+  unit_of_measurement: '°C'
+  value_template: '{{ value_json.actual }}'
+- platform: mqtt
+  state_topic: "octoprint/temperature/tool0"
+  name: "3D Head temperature"
+  unit_of_measurement: '°C'
+  value_template: '{{ value_json.actual }}'

@@ -1,0 +1,101 @@
+sensor rbp_docker:
+  - platform: mqtt
+    state_topic: "pi/infos/docker"
+    name: "Date data collected"
+    value_template: '{{ value_json.datetimedatacollected }}'
+  - platform: mqtt
+    state_topic: "pi/infos/docker"
+    name: "Boot Time"
+    value_template: '{{ value_json.boottime }}'
+  - platform: mqtt
+    state_topic: "pi/infos/docker"
+    name: "Disk usage"
+    unit_of_measurement: '%'
+    value_template: '{{ value_json.diskusage }}'
+  - platform: mqtt
+    state_topic: "pi/infos/docker"
+    name: "Virtual memory"
+    value_template: '{{ value_json.virtualmem }}'
+    unit_of_measurement: '%'
+  - platform: mqtt
+    state_topic: "pi/infos/docker"
+    name: "CPU usage"
+    unit_of_measurement: '%'
+    value_template: '{{ value_json.cpuusage }}'
+  - platform: mqtt
+    state_topic: "pi/infos/docker"
+    name: "CPU temp"
+    unit_of_measurement: '°F'
+    value_template: '{{ value_json.cputemp }}'
+  - platform: mqtt
+    state_topic: "pi/infos/docker"
+    name: "Disk size"
+    value_template: '{{ value_json.disktotal }}'
+
+sensor rbp_octoprint:
+  - platform: mqtt
+    state_topic: "pi/infos/octoprint"
+    name: "Date data collected"
+    value_template: '{{ value_json.datetimedatacollected }}'
+  - platform: mqtt
+    state_topic: "pi/infos/octoprint"
+    name: "Boot Time"
+    value_template: '{{ value_json.boottime }}'
+  - platform: mqtt
+    state_topic: "pi/infos/octoprint"
+    name: "Disk usage"
+    unit_of_measurement: '%'
+    value_template: '{{ value_json.diskusage }}'
+  - platform: mqtt
+    state_topic: "pi/infos/octoprint"
+    name: "Virtual memory"
+    value_template: '{{ value_json.virtualmem }}'
+    unit_of_measurement: '%'
+  - platform: mqtt
+    state_topic: "pi/infos/octoprint"
+    name: "CPU usage"
+    unit_of_measurement: '%'
+    value_template: '{{ value_json.cpuusage }}'
+  - platform: mqtt
+    state_topic: "pi/infos/octoprint"
+    name: "CPU temp"
+    unit_of_measurement: '°F'
+    value_template: '{{ value_json.cputemp }}'
+  - platform: mqtt
+    state_topic: "pi/infos/octoprint"
+    name: "Disk size"
+    value_template: '{{ value_json.disktotal }}'
+
+sensor rbp_wallmonitor1:
+  - platform: mqtt
+    state_topic: "pi/infos/wallmonitor1"
+    name: "Date data collected"
+    value_template: '{{ value_json.datetimedatacollected }}'
+  - platform: mqtt
+    state_topic: "pi/infos/wallmonitor1"
+    name: "Boot Time"
+    value_template: '{{ value_json.boottime }}'
+  - platform: mqtt
+    state_topic: "pi/infos/wallmonitor1"
+    name: "Disk usage"
+    unit_of_measurement: '%'
+    value_template: '{{ value_json.diskusage }}'
+  - platform: mqtt
+    state_topic: "pi/infos/wallmonitor1"
+    name: "Virtual memory"
+    value_template: '{{ value_json.virtualmem }}'
+    unit_of_measurement: '%'
+  - platform: mqtt
+    state_topic: "pi/infos/wallmonitor1"
+    name: "CPU usage"
+    unit_of_measurement: '%'
+    value_template: '{{ value_json.cpuusage }}'
+  - platform: mqtt
+    state_topic: "pi/infos/wallmonitor1"
+    name: "CPU temp"
+    unit_of_measurement: '°F'
+    value_template: '{{ value_json.cputemp }}'
+  - platform: mqtt
+    state_topic: "pi/infos/wallmonitor1"
+    name: "Disk size"
+    value_template: '{{ value_json.disktotal }}'

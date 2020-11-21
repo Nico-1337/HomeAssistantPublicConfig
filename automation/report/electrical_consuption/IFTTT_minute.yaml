@@ -1,0 +1,8 @@
+- id: electricity_consuption_minute
+  alias: Releve consomation electrique toutes les minute'
+  trigger:
+    - minutes: /1
+      platform: time_pattern
+  action:
+    - service: ifttt.trigger
+      data_template: { "event": "electricity_consuption_minute", "value1": "{{ states('sensor.current_consuption_instant') }}" }

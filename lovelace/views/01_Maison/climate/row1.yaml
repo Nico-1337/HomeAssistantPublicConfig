@@ -1,0 +1,80 @@
+- align_state: center
+  color_thresholds:
+    - color: '#61afd6'
+      value: 0
+    - color: '#d25151'
+      value: 25
+  entities:
+    - entity: sensor.exterieur_temperature
+  name: °C éxterieur
+  hours_to_show: 24
+  group_by: hour
+  show:
+    icon_adaptive_color: true
+  type: 'custom:mini-graph-card'
+
+
+- align_state: center
+  color_thresholds:
+    - color: '#61afd6'
+      value: 0
+    - color: '#61afd6'
+      value: 11
+    - color: '#59d251'
+      value: 16
+    - color: '#59d251'
+      value: 20
+    - color: '#d25151'
+      value: 25
+  entities:
+    - entity: sensor.rdc_temperature_3
+  name: °C RDC
+  hours_to_show: 24
+  group_by: hour
+  show:
+    icon_adaptive_color: true
+  type: 'custom:mini-graph-card'
+
+
+- align_state: center
+  color_thresholds:
+    - color: '#61afd6'
+      value: 0
+    - color: '#61afd6'
+      value: 11
+    - color: '#59d251'
+      value: 16
+    - color: '#59d251'
+      value: 20
+    - color: '#d25151'
+      value: 25
+  entities:
+    - entity: sensor.1er_temperature_2
+  name: '°C 1er'
+  hours_to_show: 24
+  group_by: hour
+  show:
+    icon_adaptive_color: true
+  type: 'custom:mini-graph-card'
+
+
+- align_state: center
+  color_thresholds:
+    - color: '#61afd6'
+      value: 0
+    - color: '#61afd6'
+      value: 11
+    - color: '#59d251'
+      value: 16
+    - color: '#59d251'
+      value: 20
+    - color: '#d25151'
+      value: 25
+  entities:
+    - entity: sensor.cave_temperature
+  name: '°C cave'
+  hours_to_show: 24
+  group_by: hour
+  show:
+    icon_adaptive_color: true
+  type: 'custom:mini-graph-card'

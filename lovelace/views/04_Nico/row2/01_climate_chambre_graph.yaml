@@ -1,0 +1,52 @@
+- cards:
+    - align_state: center
+      color_thresholds:
+        - color: '#61afd6'
+          value: 0
+        - color: '#61afd6'
+          value: 16
+        - color: '#59d251'
+          value: 17
+        - color: '#59d251'
+          value: 18
+        - color: '#d25151'
+          value: 20
+      entities:
+        - entity: sensor.chambre_temperature
+      height: 55
+      hours_to_show: 24
+      name: Temperature chambre
+      points_per_hour: 6
+      show:
+        icon_adaptive_color: true
+        labels: true
+        labels_secondary: false
+        points: false
+      type: 'custom:mini-graph-card'
+    - align_state: center
+      color_thresholds:
+        - color: '#d25151'
+          value: 0
+        - color: '#d25151'
+          value: 40
+        - color: '#59d251'
+          value: 45
+        - color: '#59d251'
+          value: 55
+        - color: '#d25151'
+          value: 65
+        - color: '#d25151'
+          value: 100
+      entities:
+        - entity: sensor.chambre_humidity
+      height: 55
+      hours_to_show: 24
+      name: Humidité chambre
+      points_per_hour: 6
+      show:
+        icon_adaptive_color: true
+        labels: true
+        labels_secondary: false
+        points: false
+      type: 'custom:mini-graph-card'
+  type: vertical-stack

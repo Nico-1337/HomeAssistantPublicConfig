@@ -1,0 +1,14 @@
+- id: lumiere_bureau_claude_button_mija
+  alias: Button Mija toggle lumière bureau Claude
+  trigger:
+  - platform: event
+    event_type: zha_event
+    event_data:
+      device_ieee: !secret zigbee_ieee_mija_bureau_claude
+  condition:
+  - condition: template
+    value_template: '{%if trigger.event.data.args.value==true%}true{%else%}false{%endif%}'
+  action:
+  - service: homeassistant.toggle
+    data:
+      entity_id: switch.bfa6a95c78d0cb56c8lset

@@ -1,0 +1,96 @@
+- align_state: center
+  color_thresholds:
+    - color: '#d25151'
+      value: 0
+    - color: '#d25151'
+      value: 50
+    - color: '#59d251'
+      value: 70
+    - color: '#59d251'
+      value: 80
+    - color: '#1395df'
+      value: 100
+  entities:
+    - entity: sensor.exterieur_humidity
+  name: '%H éxterieur'
+  hours_to_show: 24
+  group_by: hour
+  aggregate_func: min
+  cache: false
+  show:
+    icon_adaptive_color: true
+  type: 'custom:mini-graph-card'
+
+
+- align_state: center
+  color_thresholds:
+    - color: '#d25151'
+      value: 0
+    - color: '#d25151'
+      value: 30
+    - color: '#59d251'
+      value: 45
+    - color: '#59d251'
+      value: 60
+    - color: '#d25151'
+      value: 65
+    - color: '#d25151'
+      value: 100
+  entities:
+    - entity: sensor.rdc_humidity_3
+  name: '%H RDC'
+  hours_to_show: 24
+  group_by: hour
+  aggregate_func: avg
+  cache: false
+  show:
+    icon_adaptive_color: true
+  type: 'custom:mini-graph-card'
+
+
+- align_state: center
+  color_thresholds:
+    - color: '#d25151'
+      value: 0
+    - color: '#d25151'
+      value: 30
+    - color: '#59d251'
+      value: 45
+    - color: '#59d251'
+      value: 60
+    - color: '#d25151'
+      value: 65
+    - color: '#d25151'
+      value: 100
+  entities:
+    - entity: sensor.1er_humidity_2
+  name: '%H 1er'
+  hours_to_show: 24
+  group_by: hour
+  show:
+    icon_adaptive_color: true
+  type: 'custom:mini-graph-card'
+
+
+- align_state: center
+  color_thresholds:
+    - color: '#d25151'
+      value: 0
+    - color: '#d25151'
+      value: 30
+    - color: '#59d251'
+      value: 45
+    - color: '#59d251'
+      value: 60
+    - color: '#d25151'
+      value: 65
+    - color: '#d25151'
+      value: 100
+  entities:
+    - entity: sensor.cave_humidity
+  name: '%H cave'
+  hours_to_show: 24
+  group_by: hour
+  show:
+    icon_adaptive_color: true
+  type: 'custom:mini-graph-card'

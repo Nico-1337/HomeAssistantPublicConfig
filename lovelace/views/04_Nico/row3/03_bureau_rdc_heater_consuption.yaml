@@ -1,0 +1,31 @@
+- type: vertical-stack
+  cards:
+
+    - type: custom:mini-graph-card
+      entities:
+        - entity: sensor.radiateur_rdc_bureau_watts
+      name: Radiateur bureau
+      hours_to_show: 24
+      points_per_hour: 2
+      icon: mdi:flash
+      align_state: center
+      show:
+        graph: bar
+
+    - type: custom:mini-graph-card
+      entities:
+          - entity: sensor.radiateur_rdc_bureau_watts
+      name: Radiateur bureau
+      hours_to_show: 180
+      icon: mdi:flash
+      align_state: center
+      aggregate_func: avg
+      group_by: date
+      show:
+        graph: bar
+        labels: true
+        labels_secondary: true
+        legend: false
+        state: false
+        icon: false
+        name: false

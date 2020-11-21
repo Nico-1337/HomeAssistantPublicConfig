@@ -1,0 +1,55 @@
+# Default setup of Home Assistant
+homeassistant:
+  name: Home
+  latitude: !secret localisation_latitude
+  longitude: !secret localisation_longitude
+  elevation: 100
+  unit_system: metric
+  time_zone: Europe/Paris
+  packages: !include_dir_named packages
+  internal_url: !secret internal_url
+
+# Integration
+config:
+history:
+logbook:
+person:
+sun:
+system_health:
+updater:
+mobile_app:
+
+# Integration custom
+emulated_hue:
+python_script:
+
+#Packages
+sensor: !include_dir_merge_list sensors
+automation: !include_dir_merge_list automation
+binary_sensor: !include_dir_merge_list binary_sensor
+switch: !include_dir_merge_list switch
+
+#Composants
+group: !include groups.yaml
+script: !include scripts.yaml
+weather: !include weather.yaml
+climate: !include climate.yaml
+tts: !include tts.yaml
+media_player: !include media_player.yaml
+alarm_control_panel: !include alaram.yaml
+cloud: !include cloud.yaml
+
+#Custom
+sonoff: !include sonoff.yaml
+hue: !include hue.yaml
+browser_mod: !include browser_mod.yaml
+influxdb: !include influxdb.yaml
+ifttt:
+  key: !secret login_ifttt_api_key
+
+#Frontend
+lovelace:
+  mode: yaml
+  resources: !include lovelace/ressources.yaml
+frontend:
+  themes: !include themes.yaml

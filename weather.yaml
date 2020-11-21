@@ -1,0 +1,5 @@
+- platform: darksky
+  api_key: !secret login_darksky_api_key
+  latitude: !secret localisation_latitude
+  longitude: !secret localisation_longitude
+  mode: daily

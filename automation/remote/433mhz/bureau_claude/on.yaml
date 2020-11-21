@@ -1,0 +1,9 @@
+- id: bind_telecomande_rct1_on
+  alias: bind_telecomande_rct1_on
+  trigger:
+    platform: mqtt
+    topic: home/telecommande_rf_1
+    payload: "ON"
+  action:
+    service: switch.turn_on
+    entity_id: switch.bfa6a95c78d0cb56c8lset

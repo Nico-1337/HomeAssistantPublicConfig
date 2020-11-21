@@ -1,0 +1,9 @@
+#- id: sunrise
+#  alias: sunrise
+#  trigger:
+#    - platform: sun
+#      event: sunrise
+#  action:
+#    - service: browser_mod.set_theme
+#      data:
+#        theme: default

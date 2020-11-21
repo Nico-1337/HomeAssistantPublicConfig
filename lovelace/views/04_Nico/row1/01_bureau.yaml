@@ -1,0 +1,3 @@
+- entity: light.bureau
+  icon: 'mdi:office-building'
+  type: light

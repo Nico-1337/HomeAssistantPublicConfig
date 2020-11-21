@@ -1,0 +1,14 @@
+- id: aqara-ligth-up
+  alias: aqara-ligth-up
+  trigger:
+    - platform: event
+      event_type: zha_event
+      event_data:
+        device_ieee: !secret zigbee_ieee_aqara_cube
+        command: rotate_right
+  action:
+    - service: homeassistant.turn_on
+      data:
+        entity_id: light.salon
+      data_template:
+        brightness: '{{states.light.salon.attributes.brightness + 50}}'

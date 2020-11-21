@@ -1,0 +1,3 @@
+- entity: light.wc
+  icon: 'mdi:toilet'
+  type: light

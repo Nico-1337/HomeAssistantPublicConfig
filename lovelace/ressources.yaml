@@ -1,0 +1,10 @@
+- type: module
+  url: /local/mini-graph-card-bundle.js?v=0.9.4
+- type: module
+  url: /local/kiosk.js
+- type: module
+  url: /local/mini-media-player-bundle.js?v=1.4.2
+- type: module
+  url: https://cdn.jsdelivr.net/gh/bramkragten/weather-card/dist/weather-card.min.js
+- type: module
+  url: /local/floorplan/floorplan-card.js?v=1.1.14

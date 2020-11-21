@@ -1,0 +1,22 @@
+- id: wakeup_chambre_nico_07h00
+  alias: Reveil chambre Nico 07h00
+  description: ''
+  trigger:
+    - at: 07:00
+      platform: time
+  condition: [ ]
+  action:
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.paire_d_enceintes_chambre
+        volume_level: '0.8'
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.paire_d_enceintes_chambre
+        media_content_id: "http://icecast.pulsradio.com:80/relaxHD.mp3"
+        media_content_type: music
+    - service: light.turn_on
+      data:
+        entity_id: light.chambre
+        brightness: 255
+        transition: 10

@@ -1,0 +1,237 @@
+#sensor rbp_wallmonitor1:
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor1"
+  name: "WM1 Date data collected"
+  value_template: '{{ value_json.datetimedatacollected }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor1"
+  name: "WM1 Boot Time"
+  value_template: '{{ value_json.boottime }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor1"
+  name: "WM1 Disk usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.diskusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor1"
+  name: "WM1 Virtual memory"
+  value_template: '{{ value_json.virtualmem }}'
+  unit_of_measurement: '%'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor1"
+  name: "WM1 CPU usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.cpuusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor1"
+  name: "WM1 CPU temp"
+  unit_of_measurement: '°F'
+  value_template: '{{ value_json.cputemp }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor1"
+  name: "WM1 Disk size"
+  value_template: '{{ value_json.disktotal }}'
+
+#sensor rbp_wallmonitor2:
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor2"
+  name: "WM2 Date data collected"
+  value_template: '{{ value_json.datetimedatacollected }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor2"
+  name: "WM2 Boot Time"
+  value_template: '{{ value_json.boottime }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor2"
+  name: "WM2 Disk usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.diskusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor2"
+  name: "WM2 Virtual memory"
+  value_template: '{{ value_json.virtualmem }}'
+  unit_of_measurement: '%'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor2"
+  name: "WM2 CPU usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.cpuusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor2"
+  name: "WM2 CPU temp"
+  unit_of_measurement: '°F'
+  value_template: '{{ value_json.cputemp }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor2"
+  name: "WM2 Disk size"
+  value_template: '{{ value_json.disktotal }}'
+
+#sensor rbp_wallmonitor3:
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor3"
+  name: "WM3 Date data collected"
+  value_template: '{{ value_json.datetimedatacollected }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor3"
+  name: "WM3 Boot Time"
+  value_template: '{{ value_json.boottime }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor3"
+  name: "WM3 Disk usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.diskusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor3"
+  name: "WM3 Virtual memory"
+  value_template: '{{ value_json.virtualmem }}'
+  unit_of_measurement: '%'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor3"
+  name: "WM3 CPU usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.cpuusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor3"
+  name: "WM3 CPU temp"
+  unit_of_measurement: '°F'
+  value_template: '{{ value_json.cputemp }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor3"
+  name: "WM3 Disk size"
+  value_template: '{{ value_json.disktotal }}'
+
+#sensor rbp_wallmonitor4:
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor4"
+  name: "WM4 Date data collected"
+  value_template: '{{ value_json.datetimedatacollected }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor4"
+  name: "WM4 Boot Time"
+  value_template: '{{ value_json.boottime }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor4"
+  name: "WM4 Disk usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.diskusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor4"
+  name: "WM4 Virtual memory"
+  value_template: '{{ value_json.virtualmem }}'
+  unit_of_measurement: '%'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor4"
+  name: "WM4 CPU usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.cpuusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor4"
+  name: "WM4 CPU temp"
+  unit_of_measurement: '°F'
+  value_template: '{{ value_json.cputemp }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor4"
+  name: "WM4 Disk size"
+  value_template: '{{ value_json.disktotal }}'
+
+#sensor rbp_wallmonitor5:
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor5"
+  name: "WM5 Date data collected"
+  value_template: '{{ value_json.datetimedatacollected }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor5"
+  name: "WM5 Boot Time"
+  value_template: '{{ value_json.boottime }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor5"
+  name: "WM5 Disk usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.diskusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor5"
+  name: "WM5 Virtual memory"
+  value_template: '{{ value_json.virtualmem }}'
+  unit_of_measurement: '%'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor5"
+  name: "WM5 CPU usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.cpuusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor5"
+  name: "WM5 CPU temp"
+  unit_of_measurement: '°F'
+  value_template: '{{ value_json.cputemp }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor5"
+  name: "WM5 Disk size"
+  value_template: '{{ value_json.disktotal }}'
+
+#sensor rbp_wallmonitor6:
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor6"
+  name: "WM6 Date data collected"
+  value_template: '{{ value_json.datetimedatacollected }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor6"
+  name: "WM6 Boot Time"
+  value_template: '{{ value_json.boottime }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor6"
+  name: "WM6 Disk usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.diskusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor6"
+  name: "WM6 Virtual memory"
+  value_template: '{{ value_json.virtualmem }}'
+  unit_of_measurement: '%'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor6"
+  name: "WM6 CPU usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.cpuusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor6"
+  name: "WM6 CPU temp"
+  unit_of_measurement: '°F'
+  value_template: '{{ value_json.cputemp }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor6"
+  name: "WM6 Disk size"
+  value_template: '{{ value_json.disktotal }}'
+
+#sensor rbp_wallmonitor7:
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor7"
+  name: "WM7 Date data collected"
+  value_template: '{{ value_json.datetimedatacollected }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor7"
+  name: "WM7 Boot Time"
+  value_template: '{{ value_json.boottime }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor7"
+  name: "WM7 Disk usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.diskusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor7"
+  name: "WM7 Virtual memory"
+  value_template: '{{ value_json.virtualmem }}'
+  unit_of_measurement: '%'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor7"
+  name: "WM7 CPU usage"
+  unit_of_measurement: '%'
+  value_template: '{{ value_json.cpuusage }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor7"
+  name: "WM7 CPU temp"
+  unit_of_measurement: '°F'
+  value_template: '{{ value_json.cputemp }}'
+- platform: mqtt
+  state_topic: "pi/infos/wallmonitor7"
+  name: "WM7 Disk size"
+  value_template: '{{ value_json.disktotal }}'

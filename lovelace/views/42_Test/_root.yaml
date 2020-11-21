@@ -1,0 +1,92 @@
+icon: ''
+path: test
+title: test
+badges: [ ]
+cards:
+
+  - entity: sensor.lumi_lumi_sensor_switch_1cd56a02_power
+    hold_action:
+      action: more-info
+    name: Aqara
+    show_icon: true
+    show_name: true
+    tap_action:
+      action: toggle
+    type: entity-button
+
+
+  - entity: binary_sensor.lumi_lumi_sensor_motion_aq2_ias_zone
+    hold_action:
+      action: more-info
+    name: Aqara
+    show_icon: true
+    show_name: true
+    tap_action:
+      action: toggle
+    type: entity-button
+
+
+  - entity: binary_sensor.lumi_lumi_sensor_magnet_aq2_on_off
+    hold_action:
+      action: more-info
+    name: door
+    show_icon: true
+    show_name: true
+    type: entity-button
+
+
+  - entity: light.browser_tabletteentree
+    hold_action:
+      action: more-info
+    name: Ecrans vestibule
+    show_icon: true
+    show_name: true
+    tap_action:
+      action: toggle
+    type: entity-button
+
+
+  - type: entity-button
+    entity: switch.lumiere_couloir_1er_etage
+    hold_action:
+      action: more-info
+    icon: 'mdi:desktop-tower-monitor'
+    name: couloir
+    show_icon: true
+    show_name: true
+    tap_action:
+      action: toggle
+
+
+  - cards:
+      - entity: switch.bfc5f40ae9ea3d39ceufgl
+        hold_action:
+          action: more-info
+        icon: 'mdi:pine-tree'
+        name: Sapin de noël
+        show_icon: true
+        show_name: true
+        tap_action:
+          action: toggle
+        type: entity-button
+      - entity: switch.bffccf716a3bc42613vksx
+        hold_action:
+          action: more-info
+        icon: 'mdi:biohazard'
+        name: Diffuseur de parfum
+        show_icon: true
+        show_name: true
+        tap_action:
+          action: toggle
+        type: entity-button
+    type: horizontal-stack
+
+
+  - type: glance
+    title: Glance card sample
+    entities:
+      - switch.bf0c83888fddddb8f1k45g
+
+
+  - type: picture
+    image: /local/images/borderCollie.png

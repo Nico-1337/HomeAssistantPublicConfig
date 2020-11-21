@@ -1,0 +1,11 @@
+#- id: bind-lumiere-chaufferie-on
+#  alias: Bind lumiere chaufferie on
+#  trigger:
+#    - platform: state
+#      entity_id: binary_sensor.porte_chaufferie
+#      to: 'on'
+#  condition: [ ]
+#  action:
+#    - data:
+#        entity_id: switch.lumiere_chaufferie_relay
+#      service: switch.turn_on

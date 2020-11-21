@@ -1,0 +1,24 @@
+- platform: template
+  sensors:
+    radiateur_rdc_bureau_watts:
+      friendly_name_template: "{{ states.switch.radiateur_rdc_bureau.name}} Current Consumption"
+      value_template: '{{ states.switch.radiateur_rdc_bureau.attributes["current_power_w"] | float }}'
+      unit_of_measurement: 'W'
+- platform: template
+  sensors:
+    radiateur_chambre_watts:
+      friendly_name_template: "{{ states.switch.radiateur_chambre.name}} Current Consumption"
+      value_template: '{{ states.switch.radiateur_chambre.attributes["current_power_w"] | float }}'
+      unit_of_measurement: 'W'
+- platform: template
+  sensors:
+    ordinateur_watts:
+      friendly_name_template: "{{ states.switch.ordinateur.name}} Current Consumption"
+      value_template: '{{ states.switch.ordinateur.attributes["current_power_w"] | float }}'
+      unit_of_measurement: 'W'
+- platform: template
+  sensors:
+    climatisation_bureau_watts:
+      friendly_name_template: "{{ states.switch.climatisation_bureau.name}} Current Consumption"
+      value_template: '{{ states.switch.climatisation_bureau.attributes["current_power_w"] | float }}'
+      unit_of_measurement: 'W'

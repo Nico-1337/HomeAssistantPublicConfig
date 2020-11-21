@@ -1,0 +1,31 @@
+- entity: switch.bfa6a95c78d0cb56c8lset
+  type: picture-entity
+  tap_action:
+    action: toggle
+  image: /local/images/pieces/bureau.jpg
+  name: Bureau
+  state_filter:
+    "on": grayscale(0%)
+    "off": grayscale(100%)
+
+
+- entity: light.cours
+  type: picture-entity
+  name: Cours
+  tap_action:
+    action: toggle
+  image: /local/images/pieces/cours.jpg
+  state_filter:
+    "on": grayscale(0%)
+    "off": grayscale(100%)
+
+
+- entity: switch.lumiere_couloir_1er_etage
+  type: picture-entity
+  tap_action:
+    action: toggle
+  image: /local/images/pieces/couloir.jpg
+  name: Couloir 1er
+  state_filter:
+    "on": grayscale(0%)
+    "off": grayscale(100%)

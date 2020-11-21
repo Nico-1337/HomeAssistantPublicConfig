@@ -1,0 +1,14 @@
+icon: ''
+path: exterieur
+title: Exterieur
+panel: true
+badges: [ ]
+cards:
+  - cards:
+
+      - !include button.yaml
+
+      - !include radio.yaml
+
+    type: horizontal-stack
+

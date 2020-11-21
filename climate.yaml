@@ -1,0 +1,21 @@
+  - platform: generic_thermostat
+    name: Bureau climate
+    heater: switch.radiateur_rdc_bureau_nico
+    target_sensor: sensor.bureau_temperature
+    cold_tolerance: 0.1
+    hot_tolerance: 0.5
+    max_temp: 25
+    min_temp: 15
+    precision: 1.0
+    away_temp: 16
+    
+  - platform: generic_thermostat
+    name: Chambre climate
+    heater: switch.radiateur_chambre_nico
+    target_sensor: sensor.chambre_temperature
+    cold_tolerance: 0.1
+    hot_tolerance: 0.5
+    max_temp: 25
+    min_temp: 15
+    precision: 1.0
+    away_temp: 16

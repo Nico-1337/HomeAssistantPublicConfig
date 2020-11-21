@@ -1,0 +1,18 @@
+- id: bind-lumiere-exterieur-on
+  alias: Bind lumiere exterieur on
+  trigger:
+    - platform: state
+      entity_id:
+        - binary_sensor.lumi_lumi_sensor_motion_aq2_ias_zone
+        - binary_sensor.lumi_lumi_sensor_motion_aq2_a3e24405_ias_zone
+      to: 'on'
+  condition:
+    condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+  action:
+    - service: homeassistant.turn_on
+      data:
+        entity_id: light.cours
+        brightness: 255
+        transition: 2

@@ -1,0 +1,21 @@
+- alias: 'eau_romeo_notification_vocal_repeat_30min_en_journee'
+  trigger:
+    - minutes: /30
+      platform: time_pattern
+      condition:
+        - condition: numeric_state
+          entity_id: sensor.eau_romeo
+          below: 0.25
+        - condition: state
+          entity_id: sun.sun
+          state: 'above_horizon'
+  action:
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.rdc_maison
+        volume_level: '0.8'
+    - service: tts.google_say
+      entity_id: media_player.rdc_maison
+      data_template:
+        message: "Je souhaiterai vous rapeller que la gamelle d'eau de roméo est vide"
+        cache: false

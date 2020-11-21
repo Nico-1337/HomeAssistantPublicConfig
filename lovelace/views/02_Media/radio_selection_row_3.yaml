@@ -1,0 +1,50 @@
+- type: picture
+  image: /local/images/radio/puls_dance.jpg
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://stream.pulsradio.com:5000"
+      media_content_type: music
+
+
+- type: picture
+  image: /local/images/radio/puls_lounge.png
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://icecast.pulsradio.com:80/relaxHD.mp3"
+      media_content_type: music
+
+
+- type: picture
+  image: /local/images/radio/puls_trance.png
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://icecast.pulsradio.com:80/pulstranceHD.mp3"
+      media_content_type: music
+
+
+- type: picture
+  image: /local/images/radio/puls_hits.png
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://icecast.pulsradio.com/hitpartyHD.mp3"
+      media_content_type: music

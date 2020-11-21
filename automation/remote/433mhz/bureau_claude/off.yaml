@@ -1,0 +1,9 @@
+- id: bind_telecomande_rct1_off
+  alias: bind_telecomande_rct1_off
+  trigger:
+    platform: mqtt
+    topic: home/telecommande_rf_1
+    payload: "OFF"
+  action:
+    service: switch.turn_off
+    entity_id: switch.bfa6a95c78d0cb56c8lset

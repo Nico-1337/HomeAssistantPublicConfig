@@ -1,0 +1,47 @@
+- type: gauge
+  name: Eau Roméo
+  entity: sensor.eau_romeo
+  unit: L
+  min: 0.25
+  max: 1
+  severity:
+    red: 0
+    yellow: 0.50
+    green: 1
+
+
+
+- entity: switch.lumiere_chaufferie_relay
+  hold_action:
+    action: more-info
+  icon: 'mdi:washing-machine'
+  name: Lumière chaufferie
+  show_icon: true
+  show_name: true
+  tap_action:
+    action: toggle
+  type: entity-button
+
+
+
+- align_state: center
+  color_thresholds:
+    - color: '#59d251'
+      value: 0
+    - color: '#d25151'
+      value: 4000
+  entities:
+    - entites:
+      entity: sensor.capteur_consomation_electrique_power
+      smoothing: false
+  name: 'Consomation wh'
+  hours_to_show: 24
+  group_by: hour
+  animate: true
+  icon: mdi:power-plug
+  show:
+    icon_adaptive_color: true
+    labels: true
+    labels_secondary: true
+    graph: bar
+  type: 'custom:mini-graph-card'

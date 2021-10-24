@@ -1,0 +1,18 @@
+title: Nico
+icon: ''
+panel: true
+path: nico
+badges: [ ]
+cards:
+  - cards:
+
+      - cards: !include_dir_merge_list row1/
+        type: horizontal-stack
+
+      - cards: !include_dir_merge_list row2/
+        type: horizontal-stack
+
+      - cards: !include_dir_merge_list row3/
+        type: horizontal-stack
+
+    type: vertical-stack

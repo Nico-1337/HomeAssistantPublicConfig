@@ -1,0 +1,26 @@
+- alias: 'eau_romeo_notification_vocal_oneshot'
+  trigger:
+    - below: 0.25
+      entity_id: sensor.eau_romeo
+      platform: numeric_state
+      for: '00:01:30'
+  action:
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.rdc_maison
+        volume_level: '0.8'
+    - service: tts.google_say
+      entity_id: media_player.rdc_maison
+      data_template:
+        message: "Roméo n'a plus d'eau"
+        cache: false
+    - service: browser_mod.popup
+      data:
+        title: Roméo n'a plus d'eau
+        card:
+          type: entities
+          entities:
+            - type: picture
+              image: /local/images/borderCollie.png
+        deviceID:
+          - browser_tabletteentree

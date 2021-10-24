@@ -1,0 +1,14 @@
+- id: lumiere_escalier_button_mija
+  alias: lumiere_escalier_button_mija
+  trigger:
+    - platform: event
+      event_type: zha_event
+      event_data:
+        device_ieee: !secret zigbee_ieee_mija_escalier
+  condition:
+    - condition: template
+      value_template: '{%if trigger.event.data.args.value==true%}true{%else%}false{%endif%}'
+  action:
+    - service: homeassistant.toggle
+      data:
+        entity_id: switch.sonoff_10001914f3_1

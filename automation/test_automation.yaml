@@ -1,0 +1,23 @@
+- id: '1'
+  alias: Lol Jour
+  description: ''
+  trigger:
+  - entity_id: switch.sonoff_1000166f39
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - service: tts.google_say
+    entity_id: media_player.chambre_2
+    data_template:
+      message: '{% if now().strftime("%H")|int < 17 %} Bonjour. {% else %} Bonsoir.
+        {% endif %} Actuellement la température exterieur est de {{ states("sensor.exterieur_temperature")
+        | int | string }} degrée. {% if states("sensor.exterieur_temperature") | int
+        < 0 %} Un temps à se geler les couilles. {% elif states("sensor.exterieur_temperature")
+        | int < 15 %} Et oui sa caille. {% elif states("sensor.exterieur_temperature")
+        | int < 25 %} Une température idéal. {% else %} Ca chauffe comme pas permit.
+        {% endif %}
+
+        '
+      cache: false

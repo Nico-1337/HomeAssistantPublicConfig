@@ -1,0 +1,9 @@
+- id: electricity_consuption_dayli
+  alias: Releve consomation electrique quotidienne
+  trigger:
+    - at: 01:00
+      platform: time
+  condition: [ ]
+  action:
+    - service: ifttt.trigger
+      data_template: { "event": "electricity_consuption_dayli", "value1": "{{ states('sensor.current_consuption_last_24h') }}", "value2": "{{ states('sensor.current_consuption_last_24h_heure_pleine') }}", "value3": "{{ states('sensor.current_consuption_last_24h_heure_creuse') }}" }

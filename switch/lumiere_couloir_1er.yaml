@@ -1,0 +1,11 @@
+- platform: mqtt
+  name: "Lumière couloir 1er etage"
+  state_topic: "home/interupteur_lumiere_couloir"
+  command_topic: "cmnd/sonoff_rf_bridge/Backlog"
+  payload_on: !secret rf_switch_1er_payload_on
+  payload_off: !secret rf_switch_1er_payload_off
+  state_on: "ON"
+  state_off: "OFF"
+  optimistic: false
+  qos: 1
+  retain: true

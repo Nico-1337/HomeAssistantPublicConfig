@@ -1,0 +1,8 @@
+- alias: 'eau_romeo_sms'
+  trigger:
+    - below: 0.25
+      entity_id: sensor.eau_romeo
+      platform: numeric_state
+  action:
+    - service: ifttt.trigger
+      data_template: { "event": "eau_romeo", "value1": !secret notification_numero_portable_claude }

@@ -1,0 +1,14 @@
+- id: bind-lumiere-escalier-on
+  alias: Bind lumiere escalier on
+  trigger:
+    - to: 1_click_up
+      entity_id: sensor.escalier_interrupteur
+      platform: state
+    - to: 1_click
+      entity_id: sensor.escalier_interrupteur
+      platform: state
+  condition: [ ]
+  action:
+    - data:
+        entity_id: switch.sonoff_10001914f3_1
+      service: switch.turn_on

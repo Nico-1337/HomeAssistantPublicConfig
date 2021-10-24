@@ -1,0 +1,3 @@
+- entity: light.chambre
+  icon: 'mdi:bed-empty'
+  type: light

@@ -1,0 +1,14 @@
+title: Maison
+icon: ''
+panel: true
+path: maison-K1osk
+badges: [ ]
+cards:
+  - cards:
+      - cards: !include ligth/_root.yaml
+        type: vertical-stack
+      - cards: !include climate/_root.yaml
+        type: vertical-stack
+      - cards: !include other/_root.yaml
+        type: vertical-stack
+    type: vertical-stack

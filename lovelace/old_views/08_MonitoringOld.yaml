@@ -1,0 +1,94 @@
+title: Monitoring
+panel: false
+path: monitoring-old
+badges: [ ]
+cards:
+  - entities:
+      - entity: sensor.docker_date_data_collected
+      - entity: sensor.docker_cpu_usage
+      - entity: sensor.docker_cpu_temp
+      - entity: sensor.docker_virtual_memory
+      - entity: sensor.docker_disk_usage
+    show_header_toggle: false
+    title: Raspberry Docker
+    type: entities
+  - entities:
+      - entity: sensor.octoprint_date_data_collected
+      - entity: sensor.octoprint_cpu_usage
+      - entity: sensor.octoprint_cpu_temp
+      - entity: sensor.octoprint_virtual_memory
+      - entity: sensor.octoprint_disk_usage
+    show_header_toggle: false
+    title: Raspberry Octoprint
+    type: entities
+  - entities:
+      - entity: sensor.wm1_date_data_collected
+      - entity: sensor.wm1_cpu_usage
+      - entity: sensor.wm1_cpu_temp
+      - entity: sensor.wm1_virtual_memory
+      - entity: sensor.wm1_disk_usage
+    show_header_toggle: false
+    title: Raspberry WallMonitor1
+    type: entities
+  - entities:
+      - entity: sensor.wm2_date_data_collected
+      - entity: sensor.wm2_cpu_usage
+      - entity: sensor.wm2_cpu_temp
+      - entity: sensor.wm2_virtual_memory
+      - entity: sensor.wm2_disk_usage
+    show_header_toggle: false
+    title: Raspberry WallMonitor2
+    type: entities
+  - entities:
+      - entity: sensor.wm3_date_data_collected
+      - entity: sensor.wm3_cpu_usage
+      - entity: sensor.wm3_cpu_temp
+      - entity: sensor.wm3_virtual_memory
+      - entity: sensor.wm3_disk_usage
+    show_header_toggle: false
+    title: Raspberry WallMonitor3
+    type: entities
+  - entities:
+      - entity: sensor.wm4_date_data_collected
+      - entity: sensor.wm4_cpu_usage
+      - entity: sensor.wm4_cpu_temp
+      - entity: sensor.wm4_virtual_memory
+      - entity: sensor.wm4_disk_usage
+    show_header_toggle: false
+    title: Raspberry WallMonitor4
+    type: entities
+  - entities:
+      - entity: sensor.wm5_date_data_collected
+      - entity: sensor.wm5_cpu_usage
+      - entity: sensor.wm5_cpu_temp
+      - entity: sensor.wm5_virtual_memory
+      - entity: sensor.wm5_disk_usage
+    show_header_toggle: false
+    title: Raspberry WallMonitor5
+    type: entities
+  - entities:
+      - entity: sensor.wm6_date_data_collected
+      - entity: sensor.wm6_cpu_usage
+      - entity: sensor.wm6_cpu_temp
+      - entity: sensor.wm6_virtual_memory
+      - entity: sensor.wm6_disk_usage
+    show_header_toggle: false
+    title: Raspberry WallMonitor6
+    type: entities
+  - entities:
+      - entity: sensor.wm7_date_data_collected
+      - entity: sensor.wm7_cpu_usage
+      - entity: sensor.wm7_cpu_temp
+      - entity: sensor.wm7_virtual_memory
+      - entity: sensor.wm7_disk_usage
+    show_header_toggle: false
+    title: Raspberry WallMonitor7
+    type: entities
+  - entities:
+      - entity: sensor.3d_print_name
+      - entity: sensor.3d_progress
+      - entity: sensor.3d_bed_temperature
+      - entity: sensor.3d_head_temperature
+    show_header_toggle: false
+    title: Imprimante 3D
+    type: entities

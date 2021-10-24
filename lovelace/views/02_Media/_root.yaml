@@ -1,0 +1,21 @@
+icon: ''
+path: media
+title: Media
+panel: true
+badges: [ ]
+cards:
+  - cards:
+
+      - type: entities
+        entities: !include rdc_media_control.yaml
+
+      - cards: !include radio_selection_row_1.yaml
+        type: horizontal-stack
+
+      - cards: !include radio_selection_row_2.yaml
+        type: horizontal-stack
+
+      - cards: !include radio_selection_row_3.yaml
+        type: horizontal-stack
+
+    type: vertical-stack

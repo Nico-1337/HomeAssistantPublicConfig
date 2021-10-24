@@ -1,0 +1,8 @@
+- type: image
+  entity: light.terrasse
+  tap_action:
+    action: toggle
+  image: /local/floorplan/misc/transparent_square.png
+  style:
+    top: 12%
+    left: 42%

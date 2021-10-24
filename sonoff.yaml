@@ -1,0 +1,7 @@
+username: !secret login_sonoff_user
+password: !secret login_sonoff_password
+scan_interval: 60
+grace_period: 600
+api_region: !secret login_sonoff_cc
+entity_prefix: True
+debug: False

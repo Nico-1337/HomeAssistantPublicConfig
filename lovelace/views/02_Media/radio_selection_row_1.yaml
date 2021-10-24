@@ -1,0 +1,50 @@
+- type: picture
+  image: /local/images/radio/nostalgie.png
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://cdn.nrjaudio.fm/audio1/fr/40043/aac_64.mp3"
+      media_content_type: music
+
+
+- type: picture
+  image: /local/images/radio/nostalgie_noel.jpg
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://185.52.127.157/fr/55310/mp3_128.mp3"
+      media_content_type: music
+
+
+- type: picture
+  image: /local/images/radio/rfm.jpg
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://rfm-live-mp3-128.scdn.arkena.com/rfm.mp3"
+      media_content_type: music
+
+
+- type: picture
+  image: /local/images/radio/bfm.jpg
+  entity: media_player.rdc_maison
+  name: Play music
+  tap_action:
+    action: call-service
+    service: media_player.play_media
+    service_data:
+      entity_id: media_player.rdc_maison
+      media_content_id: "http://chai5she.cdn.dvmr.fr/bfmbusiness"
+      media_content_type: music

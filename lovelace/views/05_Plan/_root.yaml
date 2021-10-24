@@ -1,0 +1,9 @@
+icon: ''
+path: plan
+title: plan
+panel: true
+badges: [ ]
+cards:
+  - type: picture-elements
+    image: /local/floorplan/misc/rdc.jpg
+    elements: !include_dir_merge_list elements/

@@ -1,0 +1,10 @@
+- type: image
+  entity: switch.bfa6a95c78d0cb56c8lset
+  tap_action: none
+  hold_action: none
+  state_image:
+    "on": /local/floorplan/misc/light_on.png
+    "off": /local/floorplan/misc/light_off.png
+  style:
+    top: 50%
+    left: 56%

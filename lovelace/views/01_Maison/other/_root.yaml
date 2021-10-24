@@ -1,0 +1,2 @@
+- cards: !include row1.yaml
+  type: horizontal-stack

@@ -1,0 +1,3 @@
+bridges:
+- host: !secret ip_hue_bridge
+  allow_unreachable: false

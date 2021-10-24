@@ -1,0 +1,12 @@
+- id: wakeup_chambre_nico_shutoff
+  alias: Reveil chambre Nico shutoff
+  description: ''
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.poid_lit
+      below: 80
+  condition: [ ]
+  action:
+    - service: media_player.media_stop
+      data:
+        entity_id: media_player.paire_d_enceintes_chambre

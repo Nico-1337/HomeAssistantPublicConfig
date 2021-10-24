@@ -1,0 +1,85 @@
+cards:
+
+- type: custom:mini-media-player
+  entity: media_player.jardin
+  artwork: cover
+  group: true
+  source: icon
+  info: short
+
+
+- cards:
+    - type: picture
+      image: /local/images/radio/nostalgie.png
+      entity: media_player.jardin
+      name: Play music
+      tap_action:
+        action: call-service
+        service: media_player.play_media
+        service_data:
+          entity_id: media_player.jardin
+          media_content_id: "http://cdn.nrjaudio.fm/audio1/fr/40043/aac_64.mp3"
+          media_content_type: music
+    - type: picture
+      image: /local/images/radio/fg.jpg
+      entity: media_player.jardin
+      name: Play music
+      tap_action:
+        action: call-service
+        service: media_player.play_media
+        service_data:
+          entity_id: media_player.jardin
+          media_content_id: "http://radiofg.impek.com/fg"
+          media_content_type: music
+    - type: picture
+      image: /local/images/radio/nrj.png
+      entity: media_player.jardin
+      name: Play music
+      tap_action:
+        action: call-service
+        service: media_player.play_media
+        service_data:
+          entity_id: media_player.jardin
+          media_content_id: "http://cdn.nrjaudio.fm/audio1/fr/40010/aac_64.mp3"
+          media_content_type: music
+  type: horizontal-stack
+
+
+- cards:
+    - type: picture
+      image: /local/images/radio/rfm.jpg
+      entity: media_player.jardin
+      name: Play music
+      tap_action:
+        action: call-service
+        service: media_player.play_media
+        service_data:
+          entity_id: media_player.jardin
+          media_content_id: "http://rfm-live-mp3-128.scdn.arkena.com/rfm.mp3"
+          media_content_type: music
+    - type: picture
+      image: /local/images/radio/puls_lounge.png
+      entity: media_player.jardin
+      name: Play music
+      tap_action:
+        action: call-service
+        service: media_player.play_media
+        service_data:
+          entity_id: media_player.jardin
+          media_content_id: "http://icecast.pulsradio.com:80/relaxHD.mp3"
+          media_content_type: music
+    - type: picture
+      image: /local/images/radio/puls_hits.png
+      entity: media_player.jardin
+      name: Play music
+      tap_action:
+        action: call-service
+        service: media_player.play_media
+        service_data:
+          entity_id: media_player.jardin
+          media_content_id: "http://icecast.pulsradio.com/hitpartyHD.mp3"
+          media_content_type: music
+  type: horizontal-stack
+
+
+type: vertical-stack

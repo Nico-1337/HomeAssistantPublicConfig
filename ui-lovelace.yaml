@@ -1,0 +1,10 @@
+title: Tableaux de bords
+type: module
+views:
+    - !include lovelace/views/01_Maison/_root.yaml
+    - !include lovelace/views/02_Media/_root.yaml
+    - !include lovelace/views/03_Alarme/_root.yaml
+    - !include lovelace/views/04_Nico/_root.yaml
+    - !include lovelace/views/05_Plan/_root.yaml
+    - !include lovelace/views/11_Exterieur/_root.yaml
+    - !include lovelace/views/42_Test/_root.yaml

@@ -1,0 +1,12 @@
+- id: temperature_bureau_01h00_15
+  alias: Température bureau 01h00 -> 15°
+  description: ''
+  trigger:
+    - at: 01:00
+      platform: time
+  condition: [ ]
+  action:
+    - data:
+        entity_id: climate.bureau_climate
+        temperature: 15
+      service: climate.set_temperature

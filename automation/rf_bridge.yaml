@@ -1,0 +1,32 @@
+- alias: 'rfbridge_demultiplexer'
+  trigger:
+  - platform: mqtt
+    topic: tele/sonoff_rf_bridge/RESULT
+  action:
+  - service: python_script.rfbridge_demux
+    data_template:
+      payload: '{{trigger.payload_json.RfReceived.Data}}'
+
+
+- alias: 'couloir_on'
+  trigger:
+    platform: mqtt
+    topic: cmnd/sonoff_rf_bridge/Backlog
+    payload: "RfSync 11120; RfLow 380; RfHigh 1090; RfCode #040415"
+  action:
+    service: mqtt.publish
+    data_template:
+      topic: 'home/interupteur_lumiere_couloir'
+      payload: "ON"
+
+
+- alias: 'couloir_off'
+  trigger:
+    platform: mqtt
+    topic: cmnd/sonoff_rf_bridge/Backlog
+    payload: "RfSync 11120; RfLow 380; RfHigh 1090; RfCode #040414"
+  action:
+    service: mqtt.publish
+    data_template:
+      topic: 'home/interupteur_lumiere_couloir'
+      payload: "OFF"

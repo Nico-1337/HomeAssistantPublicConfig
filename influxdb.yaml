@@ -1,0 +1,8 @@
+host: !secret login_influxdb_host
+database: !secret login_influxdb_database
+username: !secret login_influxdb_username
+password: !secret login_influxdb_password
+verify_ssl: false
+tags:
+  instance: prod
+  source: hass

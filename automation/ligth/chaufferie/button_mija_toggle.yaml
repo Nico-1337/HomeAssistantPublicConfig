@@ -1,0 +1,14 @@
+- id: lumiere_chaufferie_button_mija
+  alias: Button Mija toggle lumière chaufferie
+  trigger:
+    - platform: event
+      event_type: zha_event
+      event_data:
+        device_ieee: !secret zigbee_ieee_mija_chaufferie
+  condition:
+    - condition: template
+      value_template: '{%if trigger.event.data.args.value==true%}true{%else%}false{%endif%}'
+  action:
+    - service: homeassistant.toggle
+      data:
+        entity_id: switch.lumiere_chaufferie_relay

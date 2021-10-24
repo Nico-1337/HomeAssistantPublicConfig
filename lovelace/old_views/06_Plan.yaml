@@ -1,0 +1,356 @@
+icon: ''
+path: planV2
+title: planV2
+panel: true
+badges: [ ]
+cards:
+  - type: picture-elements
+    image: /local/floorplan/img/bg_trans.png
+    elements:
+
+      - type: image
+        image: /local/floorplan/img/bg.png
+        style:
+          transform: 'translate(0%, 0%)'
+          top: 0%
+          left: 0%
+
+      # Lumières images ----------------------------------------------------------------------------------
+
+
+      # Salon
+      - type: image
+        entity: switch.sonoff_10001914f3_3
+        tap_action: none
+        hold_action: none
+        state_image:
+          "on": /local/floorplan/img/salon.png
+          "off": /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 0%
+          left: 0%
+
+      # TV
+      - type: image
+        entity: light.salon
+        tap_action: none
+        hold_action: none
+        state_image:
+          "on": /local/floorplan/img/tv.png
+          "off": /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 0%
+          left: 0%
+
+      # Exterieur
+      - type: image
+        entity: light.terrasse
+        tap_action: none
+        hold_action: none
+        state_image:
+          "on": /local/floorplan/img/jardin.png
+          "off": /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 0%
+          left: 0%
+
+      # Escalier
+      - type: image
+        entity: switch.sonoff_10001914f3_1
+        tap_action: none
+        hold_action: none
+        state_image:
+          "on": /local/floorplan/img/escalier.png
+          "off": /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 0%
+          left: 0%
+
+      # Vestibule
+      - type: image
+        entity: switch.sonoff_10001914f3_2
+        tap_action: none
+        hold_action: none
+        state_image:
+          "on": /local/floorplan/img/vestibule.png
+          "off": /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 0%
+          left: 0%
+
+      # Entree
+      - type: image
+        entity: switch.sonoff_10001914f3_4
+        tap_action: none
+        hold_action: none
+        state_image:
+          "on": /local/floorplan/img/entree.png
+          "off": /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 0%
+          left: 0%
+
+      # Bureau
+      - type: image
+        entity: switch.bfa6a95c78d0cb56c8lset
+        tap_action: none
+        hold_action: none
+        state_image:
+          "on": /local/floorplan/img/bureau.png
+          "off": /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 0%
+          left: 0%
+
+      # chaufferie
+      - type: image
+        entity: switch.lumiere_chaufferie_relay
+        tap_action: none
+        hold_action: none
+        state_image:
+          "on": /local/floorplan/img/chaufferie.png
+          "off": /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 0%
+          left: 0%
+
+      # cours
+      - type: image
+        entity: light.cours
+        tap_action: none
+        hold_action: none
+        state_image:
+          "on": /local/floorplan/img/cour.png
+          "off": /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 0%
+          left: 0%
+
+      # Lumières touch ----------------------------------------------------------------------------------
+
+      # Salon touch
+      - type: image
+        entity: switch.sonoff_10001914f3_3
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 44%
+          left: 5%
+          width: 18%
+
+      - type: image
+        entity: switch.sonoff_10001914f3_3
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 44%
+          left: 25%
+          width: 18%
+
+      # TV touch
+      - type: image
+        entity: light.salon
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 24%
+          left: 5%
+          width: 25%
+
+      # Exterieur touch
+      - type: image
+        entity: light.terrasse
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 1%
+          left: 10%
+          width: 30%
+
+      # Escalier touch
+      - type: image
+        entity: switch.sonoff_10001914f3_1
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 58%
+          left: 17%
+          width: 8%
+
+      - type: image
+        entity: switch.sonoff_10001914f3_1
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 58%
+          left: 25%
+          width: 8%
+
+      - type: image
+        entity: switch.sonoff_10001914f3_1
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 58%
+          left: 33%
+          width: 8%
+
+      # Vestibule touch
+      - type: image
+        entity: switch.sonoff_10001914f3_2
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 58%
+          left: 42%
+          width: 8%
+
+      - type: image
+        entity: switch.sonoff_10001914f3_2
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 65%
+          left: 33%
+          width: 8%
+
+      - type: image
+        entity: switch.sonoff_10001914f3_2
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 65%
+          left: 42%
+          width: 8%
+
+      # Entree touch
+      - type: image
+        entity: switch.sonoff_10001914f3_4
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 55%
+          left: 51%
+          width: 10%
+
+      - type: image
+        entity: switch.sonoff_10001914f3_4
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 61%
+          left: 51%
+          width: 10%
+
+      - type: image
+        entity: switch.sonoff_10001914f3_4
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 67%
+          left: 51%
+          width: 10%
+
+      - type: image
+        entity: switch.sonoff_10001914f3_4
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 73%
+          left: 51%
+          width: 10%
+
+      # Bureau touch
+      - type: image
+        entity: switch.bfa6a95c78d0cb56c8lset
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 44%
+          left: 48%
+          width: 13%
+
+      # chaufferie touch
+      - type: image
+        entity: switch.lumiere_chaufferie_relay
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 5%
+          left: 48%
+          width: 20%
+
+      # cours touch
+      - type: image
+        entity: light.cours
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 25%
+          left: 65%
+          width: 30%
+
+      - type: image
+        entity: light.cours
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 47%
+          left: 65%
+          width: 30%
+
+      - type: image
+        entity: light.cours
+        tap_action:
+          action: toggle
+        image: /local/floorplan/img/trans.png
+        style:
+          transform: 'translate(0%, 0%) scale(1, 1)'
+          top: 70%
+          left: 65%
+          width: 30%

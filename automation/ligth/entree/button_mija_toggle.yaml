@@ -1,0 +1,14 @@
+- id: lumiere_entree_button_mija
+  alias: Button Mija toggle lumière escalier
+  trigger:
+    - platform: event
+      event_type: zha_event
+      event_data:
+        device_ieee: !secret zigbee_ieee_mija_entree
+  condition:
+    - condition: template
+      value_template: '{%if trigger.event.data.args.value==true%}true{%else%}false{%endif%}'
+  action:
+    - service: homeassistant.toggle
+      data:
+        entity_id: switch.sonoff_10001914f3_4

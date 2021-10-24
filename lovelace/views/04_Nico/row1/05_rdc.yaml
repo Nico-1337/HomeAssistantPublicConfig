@@ -1,0 +1,3 @@
+- entity: light.rdc_bureau
+  icon: 'mdi:stairs'
+  type: light

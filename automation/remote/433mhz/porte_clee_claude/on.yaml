@@ -1,0 +1,13 @@
+- id: bind_telecomande_mini_rf_on
+  alias: bind_telecomande_mini_rf_on
+  trigger:
+    platform: mqtt
+    topic: home/mini_telecommande_rf
+    payload: "ON"
+  action:
+    - service: light.turn_on
+      entity_id: light.cours
+    - service: switch.turn_on
+      entity_id: switch.sonoff_10001914f3_2
+    - service: switch.turn_on
+      entity_id: switch.sonoff_10001914f3_4

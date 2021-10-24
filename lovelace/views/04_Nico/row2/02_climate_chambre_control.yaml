@@ -1,0 +1,2 @@
+- entity: climate.chambre_climate
+  type: thermostat

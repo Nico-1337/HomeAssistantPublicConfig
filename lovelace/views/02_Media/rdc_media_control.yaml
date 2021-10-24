@@ -1,0 +1,50 @@
+- type: custom:mini-media-player
+  entity: media_player.rdc_maison
+  artwork: cover
+  group: true
+  source: icon
+  info: short
+
+
+
+- type: custom:mini-media-player
+  entity: media_player.home_mini_cuisine
+  group: true
+  name: Cuisine
+  hide:
+    controls: true
+
+- type: custom:mini-media-player
+  entity: media_player.nesthub9471
+  group: true
+  name: Cuisine nest hub
+  hide:
+    controls: true
+
+- type: custom:mini-media-player
+  entity: media_player.vestibule
+  group: true
+  name: Vestibule
+  hide:
+    controls: true
+
+- type: custom:mini-media-player
+  entity: media_player.googlehome9293
+  group: true
+  name: Salle à manger
+  hide:
+    controls: true
+
+- type: custom:mini-media-player
+  entity: media_player.googlehome0433
+  group: true
+  name: Salon
+  hide:
+    controls: true
+
+- type: custom:mini-media-player
+  entity: media_player.home_mini_vestibule
+  group: true
+  name: Vestibule
+  hide:
+    controls: true

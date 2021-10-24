@@ -1,0 +1,31 @@
+- entity: switch.sonoff_10001914f3_1
+  type: picture-entity
+  tap_action:
+    action: toggle
+  image: /local/images/pieces/vestibule.jpg
+  name: Escalier
+  state_filter:
+    "on": grayscale(0%)
+    "off": grayscale(100%)
+
+
+- entity: switch.sonoff_10001914f3_3
+  type: picture-entity
+  name: Salle a manger
+  tap_action:
+    action: toggle
+  image: /local/images/pieces/salle_a_manger.jpg
+  state_filter:
+    "on": grayscale(0%)
+    "off": grayscale(100%)
+
+
+- entity: switch.sonoff_10001914f3_4
+  type: picture-entity
+  tap_action:
+    action: toggle
+  image: /local/images/pieces/entree.jpg
+  name: Entrée
+  state_filter:
+    "on": grayscale(0%)
+    "off": grayscale(100%)

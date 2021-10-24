@@ -1,0 +1,3 @@
+- entity: light.ordinateur
+  icon: 'mdi:desktop-mac'
+  type: light

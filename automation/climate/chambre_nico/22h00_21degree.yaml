@@ -1,0 +1,12 @@
+- id: temperature_chambre_22h00_21
+  alias: Température chambre 22h00 -> 21°
+  description: ''
+  trigger:
+    - at: '22:00'
+      platform: time
+  condition: [ ]
+  action:
+    - data:
+        entity_id: climate.chambre_climate
+        temperature: 21
+      service: climate.set_temperature

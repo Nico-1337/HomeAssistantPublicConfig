@@ -1,0 +1,44 @@
+google_actions:
+  filter:
+    include_entities:
+      - sensor.exterieur_temperature
+      - sensor.rdc_temperature_3
+      - sensor.1er_temperature_2
+      - sensor.cave_temperature
+      - light.terrasse
+      - light.salon
+      - switch.sonoff_10001914f3_1
+      - switch.sonoff_10001914f3_2
+      - switch.sonoff_10001914f3_3
+      - switch.sonoff_10001914f3_4
+      - switch.bfa6a95c78d0cb56c8lset
+      - switch.lumiere_couloir_1er_etage
+      - light.cours
+
+  entity_config:
+    sensor.exterieur_temperature:
+      name: Température exterieur
+    sensor.rdc_temperature_3:
+      name: Temperature RDC
+    sensor.1er_temperature_2:
+      name: Temperature 1er
+    sensor.cave_temperature:
+      name: Temperature cave
+    light.terrasse:
+      name: Lumière Jardin
+    light.salon:
+      name: Lumière salon
+    switch.sonoff_10001914f3_1:
+      name: Lumière escalier
+    switch.sonoff_10001914f3_2:
+      name: Lumière vestibule
+    switch.sonoff_10001914f3_3:
+      name: Lumière salle a manger
+    switch.sonoff_10001914f3_4:
+      name: Lumière entrée
+    switch.bfa6a95c78d0cb56c8lset:
+      name: Lumière bureau Claude
+    switch.lumiere_couloir_1er_etage:
+      name: Lumière couloir 1er étage
+    light.cours:
+      name: Lumière cour

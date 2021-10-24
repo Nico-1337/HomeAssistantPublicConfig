@@ -1,0 +1,8 @@
+- type: image
+  entity: switch.bfa6a95c78d0cb56c8lset
+  tap_action:
+    action: toggle
+  image: /local/floorplan/misc/transparent_square.png
+  style:
+    top: 50%
+    left: 56%
